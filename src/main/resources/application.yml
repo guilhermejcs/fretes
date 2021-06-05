@@ -1,3 +1,17 @@
 micronaut:
   application:
     name: fretes
+
+grpc:
+  server:
+    helth:
+      enabled: true
+
+endpoints:
+  all:
+    port: 8085
+    sensitive: true
+  health:
+    enabled: true
+    sensitive: false
+    details-visible: ANONYMOUS
